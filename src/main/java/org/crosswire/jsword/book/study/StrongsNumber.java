@@ -231,7 +231,7 @@ public class StrongsNumber {
         }
 
         String lang = m.group(1);
-        language = lang.charAt(0);
+        language = Character.toLowerCase(lang.charAt(0));
         switch (language) {
         case 'g':
             language = 'G';
